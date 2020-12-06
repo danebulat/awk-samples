@@ -38,7 +38,7 @@ BEGIN {
 }
 
 # Append each passed record to an array
-$NF !~ /^\./ && $1 !~ /total/ { 
+$NF !~ /^\./ && $1 !~ /^(total)/ { 
     # Skip processing record if it's this script
     if ($NF == script_name)
         next
