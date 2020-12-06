@@ -12,15 +12,14 @@ BEGIN {
 }
 
 { 
+    if (NR == 1)
+        next
+
     printf format, $NF, $1 
     ++count
 }
 
 END {
-    # Decrement count to disregard the first line 
-    # output by ls -l
-    count -= 1
-
     # Print total file count
     printf "\n\tFile count: %i\n\n", count
 }

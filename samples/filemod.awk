@@ -7,9 +7,9 @@
 # ls -la | ./filemod.awk -v c=u
 # ls -la | ./filemod.awk -v c=l
 #
-# ls -1 | awk -v c=u -f filemod.awk    # Convert files to uppercase
-# ls -1 | awk -v c=l -f filemod.awk    # Convert files to lowercase
-# ls -1 | awk -f filemod.awk           # Convert files to lowercase (default)
+# ls -la | awk -v c=u -f filemod.awk
+# ls -la | awk -v c=l -f filemod.aw
+# ls -la | awk -f filemod.awk
 
 BEGIN {
 
